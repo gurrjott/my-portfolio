@@ -50,19 +50,22 @@ h2 {
 }
 
 /* Style the button */
+/* Style for GitHub and Contact links (matching button style) */
 .pdf-link {
     color: #C17C74;
     text-decoration: none;
     border: 1.5px solid #C17C74;
-    padding: 8px 16px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 8px;
     display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'Titillium Web', sans-serif;
+    margin-top: 10px;
 }
 
 .pdf-link:hover {
     background-color: #C17C74;
     color: #fff;
 }
+
