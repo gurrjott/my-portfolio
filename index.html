@@ -1,54 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section id="home" class="section">
-        <div class="content">
-            <h1>Hi, I'm Gurjot</h1>
-            <p>A machine learning enthusiast and developer.</p>
-        </div>
-    </section>
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #2A3D45;
+    color: #C17C74;
+    text-align: center;
+}
 
-    
-    <section id="projects" class="section">
-        <div class="content">
-            <h2>Projects</h2>
-            <p>Project 1: Predicting Boston Housing Prices</p>
+/* Section styling */
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #2A3D45;
+    color: #C17C74;
+}
 
-            <!-- Button for Boston Housing Article -->
-            <div class="button-container">
-                <a href="BostonHousingArticle.pdf" target="_blank" class="pdf-link">Download/Read Boston Housing Article (PDF)</a>
-            </div>
+h1, h2 {
+    color: #C17C74;
+    margin-bottom: 20px;
+}
 
-            <!-- GitHub link -->
-            <div class="github-container" style="margin-top: 20px;">
-                <a href="https://github.com/gurrjott/Boston-Housing-ML-Project" target="_blank" class="pdf-link">View Project on GitHub</a>
-            </div>
-        </div>
-    </section>
+p {
+    font-size: 1.2rem;
+}
 
-    <section id="contact" class="section">
-        <div class="content">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:gurrjottt@gmail.com" style="color: #C17C74; text-decoration: none;">gurrjottt@gmail.com</a></p>
+/* Ensure buttons don't overlap and are displayed properly */
+.button-container, .github-container {
+    display: flex; /* Change to flex */
+    justify-content: center; /* Center the buttons horizontally */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align the buttons */
+    margin-top: 20px;
+}
 
-            <div class="social-icons" style="margin-top: 20px;">
-                <a href="https://github.com/gurrjott" target="_blank" class="pdf-link">GitHub</a>
-                <a href="https://linkedin.com/gurrjott" target="_blank" class="pdf-link">LinkedIn</a>
-                <a href="https://instagram.com/gurrjott" target="_blank" class="pdf-link">Instagram</a>
-            </div>
-        </div>
-    </section>
+/* Style for the PDF link buttons */
+.pdf-link {
+    display: inline-block;
+    color: #C17C74;
+    text-decoration: none;
+    border: 1.5px solid #C17C74;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1rem;
+    width: 100%; /* Make buttons take full width */
+    max-width: 300px; /* Limit maximum button width */
+    margin: 10px auto; /* Ensure spacing between the buttons */
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.pdf-link:hover {
+    background-color: #C17C74;
+    color: #fff;
+}
+
+/* Ensure social icons are aligned in a single line */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 
