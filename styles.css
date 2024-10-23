@@ -1,4 +1,4 @@
-/* General reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,15 +10,12 @@ body {
     background-color: #2A3D45;
     color: #C17C74;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
 /* Section styling */
 .section {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;  /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     padding: 60px 20px;
@@ -26,64 +23,36 @@ body {
     color: #C17C74;
 }
 
-/* Style the article section */
-#article {
-    text-align: center;
-}
-
-/* Center the button container */
-.button-container {
-    margin-top: 20px;
-    text-align: center;
-}
-/* Section Titles */
-h2 {
-    margin-bottom: 40px;  /* Increased space below section titles */
-    font-family: 'Titillium Web', sans-serif;
+h1, h2 {
     color: #C17C74;
+    margin-bottom: 20px;
 }
 
-/* Add space between Project 1 and the section title */
-#projects p {
-    margin-top: -20px;  /* Adjust this value to increase or decrease space */
-    margin-bottom: 20px;  /* Add space between the project and the button */
+p {
+    font-size: 1.2rem;
 }
 
-/* Style the button */
-/* Style for GitHub and Contact links (matching button style) */
+/* Style for the PDF link buttons */
 .pdf-link {
     color: #C17C74;
     text-decoration: none;
     border: 1.5px solid #C17C74;
     padding: 12px 24px;
     border-radius: 8px;
-    display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 1.1rem;
-    font-family: 'Titillium Web', sans-serif;
-    margin-top: 10px;
 }
 
 .pdf-link:hover {
     background-color: #C17C74;
     color: #fff;
 }
+
 /* Ensure social icons are aligned in a single line */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Adjust the gap between the icons */
-}
-
-/* Styling for the social media links */
-.pdf-link {
-    color: #C17C74;
-    text-decoration: none;
-    border: 1.5px solid #C17C74;
-    padding: 12px 24px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 1.1rem;
+    gap: 20px;
 }
 
 
