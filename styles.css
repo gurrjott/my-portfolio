@@ -68,4 +68,23 @@ h2 {
     background-color: #C17C74;
     color: #fff;
 }
+/* Ensure social icons are aligned in a single line */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between the icons */
+}
+
+/* Styling for the social media links */
+.pdf-link {
+    color: #C17C74;
+    text-decoration: none;
+    border: 1.5px solid #C17C74;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+
 
