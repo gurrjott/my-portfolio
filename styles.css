@@ -57,3 +57,48 @@ p {
     background-color: #C17C74;
     color: #fff;
 }
+/* Styling for the feedback box */
+.feedback-box {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.feedback-box h3 {
+    color: #C17C74;
+    margin-bottom: 10px;
+}
+
+.feedback-box textarea {
+    width: 80%;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    border: 1.5px solid #C17C74;
+    border-radius: 8px;
+    background-color: #2A3D45;
+    color: #C17C74;
+    font-size: 1rem;
+    resize: vertical;  /* Allows vertical resizing */
+}
+
+.feedback-box textarea::placeholder {
+    color: #C17C74;
+    opacity: 0.7;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1.5px solid #C17C74;
+    background-color: transparent;
+    color: #C17C74;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #C17C74;
+    color: #fff;
+}
+
