@@ -55,5 +55,31 @@ p {
     gap: 20px;
 }
 
+/* Add this to your existing CSS */
+
+/* Ensure buttons don't overlap and are displayed properly */
+.button-container, .github-container {
+    display: block;  /* Ensure each button container is treated as a block */
+    margin: 10px auto;  /* Add some spacing between the buttons */
+    text-align: center; /* Center the button within its container */
+}
+
+/* Ensure buttons are properly aligned and spaced */
+.pdf-link {
+    display: inline-block;  /* Ensure buttons are inline, but centered in their containers */
+    color: #C17C74;
+    text-decoration: none;
+    border: 1.5px solid #C17C74;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1rem;
+    margin-top: 10px; /* Ensure spacing between buttons */
+}
+
+.pdf-link:hover {
+    background-color: #C17C74;
+    color: #fff;
+}
 
 
