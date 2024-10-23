@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +9,8 @@ body {
     background-color: #2A3D45;
     color: #C17C74;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 /* Section styling */
@@ -21,9 +22,11 @@ body {
     padding: 60px 20px;
     background-color: #2A3D45;
     color: #C17C74;
+    flex-direction: column;
 }
 
-h1, h2 {
+/* Titles and Headings */
+h1, h2, h3 {
     color: #C17C74;
     margin-bottom: 20px;
 }
@@ -32,16 +35,8 @@ p {
     font-size: 1.2rem;
 }
 
-/* Container for buttons, now using flexbox */
-.button-container {
-    display: flex;  /* Enable flexbox */
-    justify-content: center;  /* Center the buttons */
-    gap: 20px;  /* Add space between the buttons */
-    margin-top: 20px;
-}
-
-/* Style for the PDF link buttons */
-.pdf-link {
+/* Buttons styling */
+.pdf-link, .submit-btn {
     display: inline-block;
     color: #C17C74;
     text-decoration: none;
@@ -50,22 +45,19 @@ p {
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 1.1rem;
-    max-width: 300px; /* Optional: Control the max button width */
+    max-width: 300px;
+    margin-top: 10px;
 }
 
-.pdf-link:hover {
+.pdf-link:hover, .submit-btn:hover {
     background-color: #C17C74;
     color: #fff;
 }
-/* Styling for the feedback box */
+
+/* Feedback box */
 .feedback-box {
     margin-top: 40px;
     text-align: center;
-}
-
-.feedback-box h3 {
-    color: #C17C74;
-    margin-bottom: 10px;
 }
 
 .feedback-box textarea {
@@ -78,7 +70,7 @@ p {
     background-color: #2A3D45;
     color: #C17C74;
     font-size: 1rem;
-    resize: vertical;  /* Allows vertical resizing */
+    resize: vertical;
 }
 
 .feedback-box textarea::placeholder {
@@ -97,8 +89,41 @@ p {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.submit-btn:hover {
+/* Flex for social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  /* Ensure icons wrap if they don't fit */
+}
+
+.social-icons a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1.5px solid #C17C74;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #C17C74;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
     background-color: #C17C74;
     color: #fff;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 10px;
+    }
+
+    .pdf-link, .submit-btn, .social-icons a {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .feedback-box textarea {
+        width: 100%;
+    }
+}
