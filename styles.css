@@ -1,4 +1,4 @@
-/* General reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -32,12 +32,11 @@ p {
     font-size: 1.2rem;
 }
 
-/* Ensure buttons don't overlap and are displayed properly */
-.button-container, .github-container {
-    display: flex; /* Change to flex */
-    justify-content: center; /* Center the buttons horizontally */
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center align the buttons */
+/* Container for buttons, now using flexbox */
+.button-container {
+    display: flex;  /* Enable flexbox */
+    justify-content: center;  /* Center the buttons */
+    gap: 20px;  /* Add space between the buttons */
     margin-top: 20px;
 }
 
@@ -51,19 +50,10 @@ p {
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 1.1rem;
-    width: 100%; /* Make buttons take full width */
-    max-width: 300px; /* Limit maximum button width */
-    margin: 10px auto; /* Ensure spacing between the buttons */
+    max-width: 300px; /* Optional: Control the max button width */
 }
 
 .pdf-link:hover {
     background-color: #C17C74;
     color: #fff;
-}
-
-/* Ensure social icons are aligned in a single line */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 }
