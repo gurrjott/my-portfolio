@@ -35,23 +35,53 @@ p {
     font-size: 1.2rem;
 }
 
+/* Project Section Styling */
+.projects-title {
+    font-size: 24px;
+    color: #C17C74;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-box {
+    border: 1.5px solid #C17C74;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 500px;
+    text-align: center;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Buttons styling */
-.pdf-link, .submit-btn {
+.pdf-link, .submit-btn, .project-button {
     display: inline-block;
     color: #C17C74;
     text-decoration: none;
     border: 1.5px solid #C17C74;
     padding: 12px 24px;
     border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     font-size: 1.1rem;
     max-width: 300px;
     margin-top: 10px;
 }
 
-.pdf-link:hover, .submit-btn:hover {
+.project-button {
+    margin: 10px;
+    background-color: #2A3D45;
+    color: #C17C74;
+}
+
+.pdf-link:hover, .submit-btn:hover, .project-button:hover {
     background-color: #C17C74;
     color: #fff;
+    transform: scale(1.05);
 }
 
 /* Feedback box */
@@ -118,7 +148,7 @@ p {
         padding: 30px 10px;
     }
 
-    .pdf-link, .submit-btn, .social-icons a {
+    .pdf-link, .submit-btn, .project-button, .social-icons a {
         width: 100%;
         max-width: 100%;
     }
